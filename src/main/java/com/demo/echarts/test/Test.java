@@ -23,4 +23,15 @@ public class Test {
         System.out.println("----1111-----");
         return "index";
     }
+
+    public static void main(String[] args) {
+        int status=1;
+        try {
+
+            int a= 1/0;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(status);
+    }
 }
